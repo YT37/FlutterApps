@@ -1,5 +1,5 @@
 # FlutterApps
-- These projects are my apps made in Flutter.
+- These are apps made in flutter.
 
 # Demo
 - All demo apps are in their respective folders.
