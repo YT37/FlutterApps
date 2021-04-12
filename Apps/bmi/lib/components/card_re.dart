@@ -3,18 +3,18 @@ import 'package:flutter/material.dart';
 class CardRe extends StatelessWidget {
   final Color bg;
   final Widget cardChild;
-  final Function onPress;
+  final void Function()? onPressed;
 
   CardRe({
-    @required this.bg,
-    this.cardChild,
-    this.onPress,
+    required this.bg,
+    required this.cardChild,
+    this.onPressed,
   });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onPress,
+      onTap: onPressed,
       child: Container(
         child: cardChild,
         decoration:

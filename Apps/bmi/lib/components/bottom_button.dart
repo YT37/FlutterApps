@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class BottomButton extends StatelessWidget {
   final String text;
-  final Function onPressed;
+  final void Function() onPressed;
 
-  BottomButton({@required this.text, @required this.onPressed});
+  BottomButton({required this.text, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {

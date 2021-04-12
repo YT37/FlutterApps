@@ -7,7 +7,7 @@ import '../models/task_data.dart';
 class AddTaskScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    String title;
+    String? title;
 
     return SafeArea(
       child: Container(

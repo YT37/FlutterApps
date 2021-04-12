@@ -34,7 +34,7 @@ const List<String> cryptoList = [
 
 class CoinData {
   Future getCoinData(String sign) async {
-    List<double> rates = [];
+    List<double?> rates = [];
 
     for (String crypto in cryptoList) {
       http.Response response = await http.get(

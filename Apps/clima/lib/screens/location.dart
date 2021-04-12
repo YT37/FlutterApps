@@ -13,10 +13,10 @@ class LocationScreen extends StatefulWidget {
 }
 
 class _LocationScreenState extends State<LocationScreen> {
-  int temp;
-  String city;
-  String message;
-  String icon;
+  int? temp;
+  String? city;
+  String? message;
+  late String icon;
 
   Weather weather = Weather();
 
@@ -30,16 +30,17 @@ class _LocationScreenState extends State<LocationScreen> {
     setState(() {
       if (data == null) {
         temp = 0;
-        icon = 'Error';
-        message = 'Unable to get weather data';
         city = '';
+        message = 'Unable to get weather data';
+        icon = 'Error';
+
         return;
       }
-      temp = (data["main"]["temp"]).toInt();
-      var condition = data["weather"][0]["id"];
-      message = weather.getMessage(temp);
-      icon = weather.getWeatherIcon(condition);
+
+      temp = data["main"]["temp"].toInt();
       city = data["name"];
+      message = weather.getMessage(temp!);
+      icon = weather.getWeatherIcon(data["weather"][0]["id"]);
     });
   }
 

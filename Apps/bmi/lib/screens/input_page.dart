@@ -14,7 +14,7 @@ const bgColor = 0xff1d1e33;
 
 const labelText = TextStyle(fontSize: 18, color: Color(0xff8d8e98));
 
-enum Gender { male, female }
+enum Gender { Male, Female }
 
 class InputPage extends StatefulWidget {
   @override
@@ -22,7 +22,7 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
-  Gender gender;
+  Gender? gender;
 
   int height = 180;
   int weight = 60;
@@ -43,32 +43,24 @@ class _InputPageState extends State<InputPage> {
                 children: [
                   Expanded(
                     child: CardRe(
-                      onPress: () {
-                        setState(() {
-                          gender = Gender.male;
-                        });
-                      },
-                      bg: gender == Gender.male
+                      onPressed: () => setState(() => gender = Gender.Male),
+                      bg: gender == Gender.Male
                           ? Color(inactiveColor)
                           : Color(bgColor),
                       cardChild: IconName(
-                        iconMF: FontAwesomeIcons.mars,
+                        icon: FontAwesomeIcons.mars,
                         nameText: "MALE",
                       ),
                     ),
                   ),
                   Expanded(
                     child: CardRe(
-                      onPress: () {
-                        setState(() {
-                          gender = Gender.female;
-                        });
-                      },
-                      bg: gender == Gender.male
+                      onPressed: () => setState(() => gender = Gender.Female),
+                      bg: gender == Gender.Male
                           ? Color(bgColor)
                           : Color(inactiveColor),
                       cardChild: IconName(
-                        iconMF: FontAwesomeIcons.venus,
+                        icon: FontAwesomeIcons.venus,
                         nameText: "FEMALE",
                       ),
                     ),

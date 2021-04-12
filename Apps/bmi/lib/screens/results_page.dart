@@ -9,9 +9,9 @@ class ResultPage extends StatelessWidget {
   final String interpretation;
 
   ResultPage({
-    @required this.result,
-    @required this.reading,
-    @required this.interpretation,
+    required this.result,
+    required this.reading,
+    required this.interpretation,
   });
 
   @override
