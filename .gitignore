@@ -2,6 +2,7 @@
 iVidya
 SuneelPrinter
 EnCourage
+WPD
 
 # Flutter
 # Miscellaneous
@@ -9,35 +10,81 @@ EnCourage
 *.log
 *.pyc
 *.swp
+
+# Files
 .DS_Store
-.atom/
 .buildlog/
 .history
 .svn/
+.gradle/
+build/
 
-# IntelliJ related
-*.iml
+# IntelliJ
 *.ipr
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# VSCode
+.vscode/
 
-# Flutter/Dart/Pub related
+# Flutter/Dart/Pub
 **/doc/api/
+**/ios/Flutter/.last_build_id
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
 .packages
 .pub-cache/
 .pub/
-build/
+pubspec.lock
 
-# Web related
+# Android
+gradle-wrapper.jar
+.gradle
+captures/
+gradlew
+gradlew.bat
+local.properties
+GeneratedPluginRegistrant.java
+key.properties
+
+# Web
 generated_plugin_registrant.dart
 
-# Exceptions to above rules.
+# Symbolication
+app.*.symbols
+
+# Obfuscation
+app.*.map.json
+
+# Exceptions
 !packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+
+# Firebase
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+firebase-debug.log*
+firebase-debug.*.log*
+
+.firebase/
+
+*.pid
+*.seed
+*.pid.lock
+lib-cov
+coverage
+.nyc_output
+.grunt
+bower_components
+.lock-wscript
+build/Release
+node_modules/
+.npm
+.eslintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+.env
