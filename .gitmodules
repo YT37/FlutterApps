@@ -2,7 +2,7 @@
 	path = Apps/FlashChat
 	url = git@github.com:YT37/FlashChat.git
 [submodule "Personal Website"]
-	path = Apps/Perosnal Website
+	path = "Apps/Personal Website"
 	url = git@github.com:YT37/Personal-Website.git
 [submodule "EComm"]
 	path = Apps/EComm
@@ -10,3 +10,6 @@
 [submodule "EnCourage"]
 	path = Apps/EnCourage
 	url = git@github.com:YT37/EnCourage.git
+[submodule "WPD"]
+	path = Apps/WPD
+	url = git@github.com:Solvrz/WPD.git
