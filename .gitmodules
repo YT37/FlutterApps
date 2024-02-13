@@ -1,3 +1,12 @@
 [submodule "FlashChat"]
 	path = Apps/FlashChat
-	url = git@github.com:YT37/FlashChat-Flutter.git
+	url = git@github.com:YT37/FlashChat.git
+[submodule "Personal Website"]
+	path = Apps/FlashChat
+	url = git@github.com:YT37/Personal-Website.git
+[submodule "FlashChat"]
+	path = Apps/FlashChat
+	url = git@github.com:Solvrz/EComm.git
+[submodule "FlashChat"]
+	path = Apps/FlashChat
+	url = git@github.com:YT37/EnCourage.git
