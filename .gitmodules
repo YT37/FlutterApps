@@ -1,15 +1,15 @@
 [submodule "FlashChat"]
 	path = Apps/FlashChat
 	url = git@github.com:YT37/FlashChat.git
-[submodule "Personal Website"]
-	path = "Apps/Personal Website"
-	url = git@github.com:YT37/Personal-Website.git
 [submodule "EComm"]
 	path = Apps/EComm
 	url = git@github.com:Solvrz/EComm.git
 [submodule "EnCourage"]
 	path = Apps/EnCourage
-	url = git@github.com:YT37/EnCourage.git
+	url = git@github.com:Solvrz/EnCourage.git
 [submodule "WPD"]
 	path = Apps/WPD
 	url = git@github.com:Solvrz/WPD.git
+[submodule "WoofCare"]
+	path = Apps/WoofCare
+	url = git@github.com:WoofCare/WoofCare.git
