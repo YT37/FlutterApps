@@ -6,7 +6,7 @@
 	url = git@github.com:Solvrz/EComm.git
 [submodule "EnCourage"]
 	path = Apps/EnCourage
-	url = git@github.com:Solvrz/EnCourage.git
+	url = git@github.com:YT37/EnCourage.git
 [submodule "WPD"]
 	path = Apps/WPD
 	url = git@github.com:Solvrz/WPD.git
