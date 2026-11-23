@@ -10,6 +10,3 @@
 [submodule "WPD"]
 	path = Apps/WPD
 	url = git@github.com:Solvrz/WPD.git
-[submodule "WoofCare"]
-	path = Apps/WoofCare
-	url = git@github.com:WoofCare/WoofCare.git
